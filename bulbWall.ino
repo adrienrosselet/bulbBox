@@ -42,7 +42,7 @@ void cercle10(bool state);
 
 void setup() {
   mcp1.begin(7);      // use default address 0
-  mcp1.pinMode(0, OUTPUT);
+  mcp1.pinMode(0, OUTPUT);//do not turn on all the pins in one command, it can draw too much current in the port expander
   mcp1.pinMode(1, OUTPUT);
   mcp1.pinMode(2, OUTPUT);
   mcp1.pinMode(3, OUTPUT);
